@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Eslam Sayed Abady</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='css/main.css')}}">
+</head>
+<body>
+
+<form method="post" action="/">
+    <div id="container"  class="center">
+        <h3 >Post/Consume Message Queue</h3>
+        <div >
+            <input name="Message">
+        </div>
+        <div  >
+            <input type="submit" value="Post" name="Post"/>
+            <input type="submit" value="Consume" name="Consume" />
+        </div>
+        <div >
+            {{consume}}
+        </div>
+    </div>
+
+</form>
+
+</body>
+</html>
